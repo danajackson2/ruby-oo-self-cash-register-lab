@@ -34,9 +34,9 @@ class CashRegister
     end
     
     def void_last_transaction
-        @total -= @last_price    
-        if @items[0...-@last_quantity] == []
-            @total = 0.0
-        end 
+        @total -= @last_price * @last_quantity    
+    #     if @items[0...-@last_quantity] == []
+    #         @total = 0.0
+    #     end 
     end
 end
